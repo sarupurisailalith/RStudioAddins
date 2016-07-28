@@ -1,0 +1,4 @@
+Name: Linear regression diagnostics
+Description: Generates summary and diagnostic plots for linear regression model.
+Binding: lm_diagnostics
+Interactive: true
