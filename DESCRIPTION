@@ -7,9 +7,5 @@ Authors@R: person("Sailalith", "Sarupuri", email = "sarupurisailalith@gmail.com"
 Description: List of addins which might come in handy to check the statistical model summary and diagnostics
 Depends:
     R (>= 3.0.0)
-Imports:
-    shiny (>= 0.13),
-    miniUI (>= 0.1.1),
-    plotly (>= 2.0)
 License: CC0
 LazyData: TRUE
