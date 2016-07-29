@@ -1,12 +1,12 @@
-\name{hello}
-\alias{hello}
-\title{Hello, World!}
+\name{RStudioAddins}
+\alias{Addins}
+\title{R Studio addins for statistical model diagnosis}
 \usage{
-hello()
+lm_diagnostics(fit)
 }
 \description{
-Prints 'Hello, world!'.
+opens a shiny gadget 
 }
 \examples{
-hello()
+lm_diagnostics(fit)
 }
