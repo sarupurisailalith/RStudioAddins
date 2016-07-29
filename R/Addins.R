@@ -9,6 +9,7 @@ lm_diagnostics <- function() {
   require("plotly")
   require("miniUI")
 
+  # UI components of the gadget
   ui <- miniPage(
     gadgetTitleBar("Linear regression : Model Diagnostics"),
     miniContentPanel(
@@ -29,6 +30,7 @@ lm_diagnostics <- function() {
     values$fit_obj <- list()
     values$diagPlots <- list()
 
+    # getting the model object into a reactive value obj on clicking the action button
     observeEvent(input$load, {
       values$fit_obj <- get(input$model, envir = parent.frame(1))
     })
@@ -56,6 +58,7 @@ lm_diagnostics <- function() {
       )
     })
 
+    # printing the summary 
     output$lm_summary <- renderPrint({
       fit <- values$fit_obj
       tab <- summary(fit)
@@ -89,6 +92,7 @@ lm_diagnostics <- function() {
       values$diagPlots[[4]]
     })
 
+    # generating plots using plotly and storing them in a list 
     observeEvent(input$load,{
       fit <- values$fit_obj
       class(fit) <- "lm"
