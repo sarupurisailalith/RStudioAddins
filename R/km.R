@@ -56,7 +56,7 @@ km_diagnostics <- function() {
         fluidRow(align="center",
                  column(1),
                  column(5,verbatimTextOutput("km_summary")),
-                 column(5),
+                 column(5, uiOutput("components")),
                  column(1)),
         br(),
         fluidRow(align = "center",br(),
@@ -69,6 +69,18 @@ km_diagnostics <- function() {
                  ),
                  br()
         )
+      )
+    })
+    
+    output$components <- renderUI({
+      input$load
+      fti <- values$fit_obj
+      fluidRow(
+        br(),br(),br(),br(),
+        HTML("<h4> Total sum of squares: <b>",round(values$fit_obj[["totss"]], digits=3),"</b></h4>"), br(),br(),
+        HTML("<h4> Total within-cluster sum of squares: <b>",round(values$fit_obj[["tot.withinss"]], digits = 3),"</b></h4>"), br(),br(),
+        HTML("<h4> Between cluster sum of squares: <b>",round(values$fit_obj[["betweenss"]], digits = 3),"</b></h4>"), br(),br(),
+        HTML("<h4> Number of iterations: <b>",values$fit_obj[["iter"]],"</b></h4>"), br(),br()
       )
     })
     
