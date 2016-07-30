@@ -2,3 +2,8 @@ Name: Linear regression diagnostics
 Description: Generates summary and diagnostic plots for linear regression model.
 Binding: lm_diagnostics
 Interactive: true
+
+Name: K-means model diagnostics
+Description: Generates summary and diagnostic plots for K-means clustering model.
+Binding: km_diagnostics
+Interactive: true
