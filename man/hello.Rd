@@ -2,8 +2,9 @@
 \alias{Addins}
 \title{R Studio addins }
 \usage{
-lm_diagnostics()
-km_diagnostics()
+RStudioAddins::lm_diagnostics()
+RStudioAddins::km_diagnostics()
+RStudioAddins::df_merge()
 }
 \description{
 opens a shiny gadget 

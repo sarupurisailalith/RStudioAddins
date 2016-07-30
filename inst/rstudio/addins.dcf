@@ -7,3 +7,8 @@ Name: K-means model diagnostics
 Description: Generates summary and diagnostic plots for K-means clustering model.
 Binding: km_diagnostics
 Interactive: true
+
+Name: Merge data frames
+Description: Merges two data frames and creates a new data frame
+Binding: df_merge
+Interactive: false

@@ -4,6 +4,9 @@ This is a package with list of R studio Addins.
 * Statistical model diagnostic tools:
     + Linear regression 
     + K-means clustering
+    
+* Data frame operations:
+    + Merge two data frames - *creates a new data frame object after merging*
 
 ## Installation
 
