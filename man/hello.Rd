@@ -5,6 +5,7 @@
 RStudioAddins::lm_diagnostics()
 RStudioAddins::km_diagnostics()
 RStudioAddins::df_merge()
+RStudioAddins::var_conv()
 }
 \description{
 opens a shiny gadget 

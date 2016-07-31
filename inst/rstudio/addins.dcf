@@ -12,3 +12,8 @@ Name: Merge data frames
 Description: Merges two data frames and creates a new data frame
 Binding: df_merge
 Interactive: false
+
+Name: Convert variable types 
+Description: Convert variable types in a data frame
+Binding: var_conv
+Interactive: false

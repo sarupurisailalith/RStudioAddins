@@ -8,8 +8,9 @@ df_merge <- function() {
   ui <- miniPage(
     gadgetTitleBar("Merge data frames"),
     miniContentPanel(
-      fluidRow(align = "center",
-               column(4,selectInput("df1", "select dataframe X:", choices = c("",unlist(ls(envir = parent.frame(1)))), selected = NULL, width = "50%"),
+      fluidRow(align = "center",br(),
+               HTML('<b> Creates a data frame "df_merged" after clicking on "Done"'),br(),
+               fluidRow(column(4,selectInput("df1", "select dataframe X:", choices = c("",unlist(ls(envir = parent.frame(1)))), selected = NULL, width = "50%"),
                       selectInput("df2", "select dataframe Y", choices = c("",unlist(ls(envir = parent.frame(1)))), selected = NULL, width = "50%"),
                       br(),
                       actionButton("load", "load data frames"),
@@ -17,7 +18,7 @@ df_merge <- function() {
                       fluidRow( uiOutput("options"))),
                column(8, uiOutput("data_disp"),br(),
                       HTML("<b><u>Merged data frame</u></b>"),br(),
-                      dataTableOutput("merged_df"))
+                      dataTableOutput("merged_df")))
       )
     )
   )
@@ -101,7 +102,7 @@ df_merge <- function() {
     })
     
     observeEvent(input$done, {
-      stopApp('<<-'(merged_df,values$merged))
+      stopApp('<<-'(df_merged,values$merged))
     })
   }
   

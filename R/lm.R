@@ -68,11 +68,13 @@ lm_diagnostics <- function() {
 
     output$lm_diagPlots <- renderUI({
       fluidRow(
-        fluidRow(column(6,plotlyOutput("residvsfit")),
+        column(1),
+        column(10,fluidRow(column(6,plotlyOutput("residvsfit")),
                  column(6,plotlyOutput("qqplot"))),
         br(),
         fluidRow(column(6,plotlyOutput("scale")),
-                 column(6,plotlyOutput("leverage")))
+                 column(6,plotlyOutput("leverage")))),
+        column(1)
       )
     })
 

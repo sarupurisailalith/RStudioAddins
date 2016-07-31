@@ -1,4 +1,4 @@
-# RStudioAddins
+# RStudio Addins
 This is a package with list of R studio Addins.
 
 * Statistical model diagnostic tools:
@@ -7,8 +7,9 @@ This is a package with list of R studio Addins.
     
 * Data frame operations:
     + Merge two data frames - *creates a new data frame object after merging*
+    + Convert variable types in a data frame - *creates a new data frame object after conversion*
 
-## Installation
+## Installation and Usage
 
 Make sure you have the latest version of [devtools](https://github.com/hadley/devtools), [htmltools](https://github.com/rstudio/htmltools), [shiny](https://github.com/rstudio/shiny) and [miniUI](https://github.com/rstudio/miniUI); then install this package
 
@@ -33,3 +34,5 @@ RStudioAddins::lm_diagnostics()
 
 
 *Update 1:* Added linear model diagnostics, k-means clustering diagnostics
+
+*Update 2:* Added data frame merge, variable type conversion 
