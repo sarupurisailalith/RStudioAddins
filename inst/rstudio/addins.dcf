@@ -17,3 +17,8 @@ Name: Convert variable types
 Description: Convert variable types in a data frame
 Binding: var_conv
 Interactive: false
+
+Name: Pivot table  
+Description: Construct pivot tables and data visualisations from a data frame
+Binding: pivot_table
+Interactive: true

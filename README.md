@@ -8,6 +8,7 @@ This is a package with list of R studio Addins.
 * Data frame operations:
     + Merge two data frames - *creates a new data frame object after merging*
     + Convert variable types in a data frame - *creates a new data frame object after conversion*
+    + Pivot table
 
 ## Installation and Usage
 
@@ -29,6 +30,7 @@ RStudioAddins::lm_diagnostics()
 * K-means clustering model diagnostics:
 [cluster](https://cran.r-project.org/web/packages/cluster/index.html),
 [clValid](https://cran.r-project.org/web/packages/clValid/index.html)
+* Pivot table : [rpivotTable](https://cran.r-project.org/web/packages/rpivotTable/index.html)
 
 
 
